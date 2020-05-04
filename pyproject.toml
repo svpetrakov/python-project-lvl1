@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "svpetrakov_brain_games"
-version = "0.1.3"
+version = "0.1.4"
 description = "Игры разума, первый проект"
 authors = ["Sergei <sv.petrakov@yandex.ru>"]
 packages = [
