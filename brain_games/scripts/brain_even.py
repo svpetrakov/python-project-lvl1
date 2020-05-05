@@ -3,7 +3,7 @@ import brain_games.cli
 from random import randint
 
 
-def check_parity(name):
+def check_parity(user_name):
     '''
     Функция генерирует случайное число в диапазоне от 1 до max_number,
     спрашивает пользователя является ли это число четным.
@@ -14,31 +14,20 @@ def check_parity(name):
     Если игрок дал правильный ответ на все 3 вопроса,
     выводится поздравительное сообщение, игра завершается.
     '''
-    max_number = 100
     question_number = 1
-    while question_number <= 3:
-        random_number = randint(1, max_number)
-        print('Question: ' + str(random_number))
-        answer = brain_games.cli.check_parity_question()
+    while question_number <= brain_games.cli.question_count:
+        random_number = randint(1, brain_games.cli.max_number)
+        user_answer = brain_games.cli.ask_question(random_number)
         if (random_number % 2) == 1:
-            if answer == 'no':
-                question_number += 1
-                print('Correct!')
-            else:
-                print("'" + str(answer) + "' is wrong answer ;(.", end='')
-                print(" Correct answer was 'no'.")
-                print("Let's try again, " + str(name) + "!!")
-                return
+            right_answer = 'no'
         else:
-            if answer == 'yes':
-                question_number += 1
-                print('Correct!')
-            else:
-                print("'" + str(answer) + "' is wrong answer ;(.", end='')
-                print(" Correct answer was 'yes'.")
-                print("Let's try again, " + str(name) + "!!")
-                return
-    print('Congratulations, ' + str(name) + '!')
+            right_answer = 'yes'
+        result = brain_games.cli.check_question(right_answer, user_answer, user_name)  # noqa: E501
+        if result:
+            question_number += 1
+        else:
+            return
+    brain_games.cli.print_congratulation(user_name)
     return
 
 
