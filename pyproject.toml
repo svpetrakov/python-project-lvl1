@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "svpetrakov_brain_games"
-version = "0.1.5"
+version = "0.1.6"
 description = "Игры разума, первый проект"
 authors = ["Sergei <sv.petrakov@yandex.ru>"]
 packages = [
@@ -20,6 +20,7 @@ flake8 = "^3.7.9"
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
 
 [[tool.poetry.source]]
 name = "test_pypi"
