@@ -2,6 +2,12 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 [![Build Status](https://travis-ci.com/svpetrakov/python-project-lvl1.svg?branch=master)](https://travis-ci.com/svpetrakov/python-project-lvl1)
 
+# Игры разума
+
+
+В рамках проекта реализован набор мини-игр, запускаемых из консоли.
+[Ссылка на описание проекта на hexlet.io](https://ru.hexlet.io/professions/python/projects/49)
+
 
 ## Brain-even:
 
@@ -19,3 +25,9 @@
 
 
 [![asciicast](https://asciinema.org/a/7EbTSSP7B8Q4aiP8ouak9G9nu.svg)](https://asciinema.org/a/7EbTSSP7B8Q4aiP8ouak9G9nu)
+
+
+## Brain-progression
+
+
+[![asciicast](https://asciinema.org/a/rmGlaQqoy8gMIL8XfFmwWknVr.svg)](https://asciinema.org/a/rmGlaQqoy8gMIL8XfFmwWknVr)
