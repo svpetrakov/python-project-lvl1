@@ -36,4 +36,4 @@
 ## Brain-prime
 
 
-<script id="asciicast-fiGQJuvCpcI6kxxY9NE2MHGsR" src="https://asciinema.org/a/fiGQJuvCpcI6kxxY9NE2MHGsR.js" async></script>
+[![asciicast](https://asciinema.org/a/fiGQJuvCpcI6kxxY9NE2MHGsR.svg)](https://asciinema.org/a/fiGQJuvCpcI6kxxY9NE2MHGsR)
