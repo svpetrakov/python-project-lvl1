@@ -5,7 +5,7 @@ from random import randint, choice
 
 def calc(user_name):
     '''
-    Функция генерирует два случайных числа в диапазоне от 1 до max_number,
+    Функция генерирует два случайных числа в диапазоне от 1 до MAX_NUMBER,
     генерирует случайную операцию (из списка: +, -, *), спрашивает пользователя
     результат вычисления.
     Если пользователь отвечает не правильно - функция выводит сообщение
@@ -16,9 +16,9 @@ def calc(user_name):
     выводится поздравительное сообщение, игра завершается.
     '''
     question_number = 1
-    while question_number <= brain_games.cli.question_count:
-        first_number = randint(1, brain_games.cli.max_number)
-        second_number = randint(1, brain_games.cli.max_number)
+    while question_number <= brain_games.cli.QUESTION_COUNT:
+        first_number = randint(1, brain_games.cli.MAX_NUMBER)
+        second_number = randint(1, brain_games.cli.MAX_NUMBER)
         operator = choice('+-*')
         question = str(first_number) + operator + str(second_number)
         # не знаю, разрешено ли пользоваться функцией eval.

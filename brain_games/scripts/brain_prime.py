@@ -31,8 +31,8 @@ def is_it_prime(user_name):
     выводится поздравительное сообщение, игра завершается.
     '''
     question_number = 1
-    while question_number <= brain_games.cli.question_count:
-        question = randint(1, brain_games.cli.max_number)
+    while question_number <= brain_games.cli.QUESTION_COUNT:
+        question = randint(1, brain_games.cli.MAX_NUMBER)
         if is_prime(question):
             right_answer = 'yes'
         else:

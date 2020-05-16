@@ -5,7 +5,7 @@ from random import randint
 
 def check_parity(user_name):
     '''
-    Функция генерирует случайное число в диапазоне от 1 до max_number,
+    Функция генерирует случайное число в диапазоне от 1 до MAX_NUMBER,
     спрашивает пользователя является ли это число четным.
     Если пользователь отвечает не правильно - функция выводит сообщение
     о неправильном ответе и завершает игру.
@@ -15,8 +15,8 @@ def check_parity(user_name):
     выводится поздравительное сообщение, игра завершается.
     '''
     question_number = 1
-    while question_number <= brain_games.cli.question_count:
-        random_number = randint(1, brain_games.cli.max_number)
+    while question_number <= brain_games.cli.QUESTION_COUNT:
+        random_number = randint(1, brain_games.cli.MAX_NUMBER)
         user_answer = brain_games.cli.ask_question(random_number)
         if (random_number % 2) == 1:
             right_answer = 'no'

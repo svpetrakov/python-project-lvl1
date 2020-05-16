@@ -12,12 +12,12 @@ def create_progression():
     и число, которые скрыто (правильный ответ)
     '''
     progression = ''
-    progression_step = randint(1, brain_games.cli.progression_step_max)
-    hide_number = randint(1, brain_games.cli.progression_len)
-    progression_first_member = randint(1, brain_games.cli.progression_first_member_max)  # noqa: E501
+    progression_step = randint(1, brain_games.cli.PROGRESSION_STEP_MAX)
+    hide_number = randint(1, brain_games.cli.PROGRESSION_LEN)
+    progression_first_member = randint(1, brain_games.cli.PROGRESSION_FIRST_MEMBER_MAX)  # noqa: E501
     index = 1
     progression_member = progression_first_member
-    while index <= brain_games.cli.progression_len:
+    while index <= brain_games.cli.PROGRESSION_LEN:
         if index != hide_number:
             progression = progression + ' ' + str(progression_member)
         else:
@@ -39,7 +39,7 @@ def find_progression_number(user_name):
     выводится поздравительное сообщение, игра завершается.
     '''
     question_number = 1
-    while question_number <= brain_games.cli.question_count:
+    while question_number <= brain_games.cli.QUESTION_COUNT:
         question, right_answer = create_progression()
         user_answer = brain_games.cli.ask_question(question)
         result = brain_games.cli.check_question(right_answer, user_answer, user_name)  # noqa: E501

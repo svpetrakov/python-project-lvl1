@@ -21,7 +21,7 @@ def gcd(first_number, second_number):
 
 def find_gcd(user_name):
     '''
-    Функция генерирует два случайных числа в диапазоне от 1 до max_number,
+    Функция генерирует два случайных числа в диапазоне от 1 до MAX_NUMBER,
     спрашивает пользователя НОД этих двух чисел.
     Если пользователь отвечает не правильно - функция выводит сообщение
     о неправильном ответе и завершает игру.
@@ -31,9 +31,9 @@ def find_gcd(user_name):
     выводится поздравительное сообщение, игра завершается.
     '''
     question_number = 1
-    while question_number <= brain_games.cli.question_count:
-        first_number = randint(1, brain_games.cli.max_number)
-        second_number = randint(1, brain_games.cli.max_number)
+    while question_number <= brain_games.cli.QUESTION_COUNT:
+        first_number = randint(1, brain_games.cli.MAX_NUMBER)
+        second_number = randint(1, brain_games.cli.MAX_NUMBER)
         question = str(first_number) + ' ' + str(second_number)
         right_answer = gcd(first_number, second_number)
         user_answer = brain_games.cli.ask_question(question)

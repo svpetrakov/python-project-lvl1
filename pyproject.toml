@@ -1,10 +1,21 @@
 [tool.poetry]
 name = "svpetrakov_brain_games"
-version = "0.1.8"
+version = "0.1.9"
 description = "Игры разума, первый проект"
 authors = ["Sergei <sv.petrakov@yandex.ru>"]
 packages = [
   { include = "brain_games" },
+]
+repository = "https://github.com/svpetrakov/python-project-lvl1"
+classifiers = [
+    "Topic :: Other/Nonlisted Topic",
+    "Development Status :: 4 - Beta",
+	"License :: Freeware",
+	"Programming Language :: Python",
+	"Operating System :: POSIX",
+	"Environment :: Console",
+	"Intended Audience :: Education",
+	"Natural Language :: English"
 ]
 
 [tool.poetry.dependencies]

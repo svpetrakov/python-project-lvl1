@@ -1,11 +1,11 @@
 import prompt
 
 
-question_count = 3  # Количество вопросов в играх
-max_number = 100  # Максимум, который используется при генерации чисел в играх
-progression_len = 10  # Длина прогрессии
-progression_step_max = 10  # Максимум шага в прогрессии
-progression_first_member_max = 10  # Максимум первого числа в прогрессии
+QUESTION_COUNT = 3  # Количество вопросов в играх
+MAX_NUMBER = 100  # Максимум, который используется при генерации чисел в играх
+PROGRESSION_LEN = 10  # Длина прогрессии
+PROGRESSION_STEP_MAX = 10  # Максимум шага в прогрессии
+PROGRESSION_FIRST_MEMBER_MAX = 10  # Максимум первого числа в прогрессии
 
 
 def welcome_user():
