@@ -31,17 +31,9 @@ def check_parity(user_name):
     return
 
 
-def make_greeting():
-    print('Welcome to the Brain Games!')
-    print('Answer "yes" if number even otherwise answer "no"')
-    name = brain_games.cli.welcome_user()
-    print('Hello, ' + str(name) + '!')
-    return name
-
-
 def main():
-    name = make_greeting()
-    check_parity(name)
+    user_name = brain_games.cli.make_greeting('brain_even')
+    check_parity(user_name)
 
 
 if __name__ == '__main__':

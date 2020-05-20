@@ -50,7 +50,7 @@ def check_question(right_answer, user_answer, user_name):
     else:
         print("'" + str(user_answer) + "' is wrong answer ;(.", end='')
         print(" Correct answer was '" + str(right_answer) + "'.")
-        print("Let's try again, " + str(user_name) + "!!")
+        print("Let's try again, " + str(user_name) + "!")
         return False
 
 
@@ -61,3 +61,26 @@ def print_congratulation(user_name):
     '''
     print('Congratulations, ' + str(user_name) + '!')
     return
+
+
+def make_greeting(game_type):
+    '''
+    Функция печатает на экран правила игры (в зависимости от типа игры)
+    и приветствие пользователю
+    '''
+    print('Welcome to the Brain Games!')
+    if game_type == 'brain_calc':
+        print('What is the result of the expression?')
+    elif game_type == 'brain_progression':
+        print('What number is missing in the progression?')
+    elif game_type == 'brain_prime':
+        print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    elif game_type == 'brain_gcd':
+        print('Find the greatest common divisor of given numbers.')
+    elif game_type == 'brain_even':
+        print('Answer "yes" if number even otherwise answer "no"')
+    else:
+        print('Error game type')
+    name = welcome_user()
+    print('Hello, ' + str(name) + '!')
+    return name

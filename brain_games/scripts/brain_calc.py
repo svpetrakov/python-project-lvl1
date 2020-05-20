@@ -39,16 +39,8 @@ def calc(user_name):
     return
 
 
-def make_greeting():
-    print('Welcome to the Brain Games!')
-    print('What is the result of the expression?')
-    name = brain_games.cli.welcome_user()
-    print('Hello, ' + str(name) + '!')
-    return name
-
-
 def main():
-    user_name = make_greeting()
+    user_name = brain_games.cli.make_greeting('brain_calc')
     calc(user_name)
 
 

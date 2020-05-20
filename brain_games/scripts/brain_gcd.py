@@ -46,16 +46,8 @@ def find_gcd(user_name):
     return
 
 
-def make_greeting():
-    print('Welcome to the Brain Games!')
-    print('Find the greatest common divisor of given numbers.')
-    name = brain_games.cli.welcome_user()
-    print('Hello, ' + str(name) + '!')
-    return name
-
-
 def main():
-    user_name = make_greeting()
+    user_name = brain_games.cli.make_greeting('brain_gcd')
     find_gcd(user_name)
 
 

@@ -51,16 +51,8 @@ def find_progression_number(user_name):
     return
 
 
-def make_greeting():
-    print('Welcome to the Brain Games!')
-    print('What number is missing in the progression?')
-    name = brain_games.cli.welcome_user()
-    print('Hello, ' + str(name) + '!')
-    return name
-
-
 def main():
-    user_name = make_greeting()
+    user_name = brain_games.cli.make_greeting('brain_progression')
     find_progression_number(user_name)
 
 
